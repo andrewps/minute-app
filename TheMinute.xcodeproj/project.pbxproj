@@ -13,9 +13,27 @@
 		9D6D5E841C6BCC1E00363A06 /* TheMinute.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D6D5E821C6BCC1E00363A06 /* TheMinute.xcdatamodeld */; };
 		9D6D5E861C6BCC1E00363A06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D6D5E851C6BCC1E00363A06 /* Assets.xcassets */; };
 		9D6D5E891C6BCC1E00363A06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D6D5E871C6BCC1E00363A06 /* LaunchScreen.storyboard */; };
+		9D6D5EA41C6BCCC000363A06 /* FeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6D5EA31C6BCCC000363A06 /* FeedCollectionViewCell.swift */; };
+		9D6D5EA61C6BCCE400363A06 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6D5EA51C6BCCE400363A06 /* FeedViewController.swift */; };
+		9D6D5EAE1C6BCE2100363A06 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6D5EAD1C6BCE2100363A06 /* WelcomeViewController.swift */; };
+		9D6D5EB01C6BCE4600363A06 /* WelcomeContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6D5EAF1C6BCE4600363A06 /* WelcomeContentViewController.swift */; };
+		9D6D5EB21C6BCE7F00363A06 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6D5EB11C6BCE7F00363A06 /* ArticleViewController.swift */; };
+		9D6D5EB41C6BCEB100363A06 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6D5EB31C6BCEB100363A06 /* WebViewController.swift */; };
+		9D6D5EDD1C6BED0C00363A06 /* DomaineDisp-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9D6D5ED51C6BED0C00363A06 /* DomaineDisp-Medium.otf */; };
+		9D6D5EDE1C6BED0C00363A06 /* DomaineDisp-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9D6D5ED61C6BED0C00363A06 /* DomaineDisp-MediumItalic.otf */; };
+		9D6D5EDF1C6BED0C00363A06 /* DomaineDispNar-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9D6D5ED71C6BED0C00363A06 /* DomaineDispNar-Black.otf */; };
+		9D6D5EE01C6BED0C00363A06 /* DomaineDispNar-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9D6D5ED81C6BED0C00363A06 /* DomaineDispNar-BlackItalic.otf */; };
+		9D6D5EE11C6BED0C00363A06 /* National-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9D6D5ED91C6BED0C00363A06 /* National-Book.otf */; };
+		9D6D5EE21C6BED0C00363A06 /* National-BookItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9D6D5EDA1C6BED0C00363A06 /* National-BookItalic.otf */; };
+		9D6D5EE31C6BED0C00363A06 /* National-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9D6D5EDB1C6BED0C00363A06 /* National-Medium.otf */; };
+		9D6D5EE41C6BED0C00363A06 /* National-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9D6D5EDC1C6BED0C00363A06 /* National-MediumItalic.otf */; };
+		E32CAE36D062315D1824068A /* Pods_TheMinute.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 711A3ADAA4CE0984C977F676 /* Pods_TheMinute.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02A721E234EBD363B24D8BD7 /* Pods-TheMinute.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheMinute.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheMinute/Pods-TheMinute.release.xcconfig"; sourceTree = "<group>"; };
+		711A3ADAA4CE0984C977F676 /* Pods_TheMinute.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheMinute.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D89A7FA2DC2851BC0B666B0 /* Pods-TheMinute.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheMinute.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheMinute/Pods-TheMinute.debug.xcconfig"; sourceTree = "<group>"; };
 		9D6D5E781C6BCC1E00363A06 /* TheMinute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheMinute.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D6D5E7B1C6BCC1E00363A06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D6D5E7D1C6BCC1E00363A06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +42,20 @@
 		9D6D5E851C6BCC1E00363A06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D6D5E881C6BCC1E00363A06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D6D5E8A1C6BCC1E00363A06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D6D5EA31C6BCCC000363A06 /* FeedCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCollectionViewCell.swift; sourceTree = "<group>"; };
+		9D6D5EA51C6BCCE400363A06 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		9D6D5EAD1C6BCE2100363A06 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		9D6D5EAF1C6BCE4600363A06 /* WelcomeContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeContentViewController.swift; sourceTree = "<group>"; };
+		9D6D5EB11C6BCE7F00363A06 /* ArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArticleViewController.swift; path = TheMinute/ArticleViewController.swift; sourceTree = SOURCE_ROOT; };
+		9D6D5EB31C6BCEB100363A06 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		9D6D5ED51C6BED0C00363A06 /* DomaineDisp-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DomaineDisp-Medium.otf"; path = "../DomaineDisp-Medium.otf"; sourceTree = "<group>"; };
+		9D6D5ED61C6BED0C00363A06 /* DomaineDisp-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DomaineDisp-MediumItalic.otf"; path = "../DomaineDisp-MediumItalic.otf"; sourceTree = "<group>"; };
+		9D6D5ED71C6BED0C00363A06 /* DomaineDispNar-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DomaineDispNar-Black.otf"; path = "../DomaineDispNar-Black.otf"; sourceTree = "<group>"; };
+		9D6D5ED81C6BED0C00363A06 /* DomaineDispNar-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DomaineDispNar-BlackItalic.otf"; path = "../DomaineDispNar-BlackItalic.otf"; sourceTree = "<group>"; };
+		9D6D5ED91C6BED0C00363A06 /* National-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "National-Book.otf"; path = "../National-Book.otf"; sourceTree = "<group>"; };
+		9D6D5EDA1C6BED0C00363A06 /* National-BookItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "National-BookItalic.otf"; path = "../National-BookItalic.otf"; sourceTree = "<group>"; };
+		9D6D5EDB1C6BED0C00363A06 /* National-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "National-Medium.otf"; path = "../National-Medium.otf"; sourceTree = "<group>"; };
+		9D6D5EDC1C6BED0C00363A06 /* National-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "National-MediumItalic.otf"; path = "../National-MediumItalic.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +63,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E32CAE36D062315D1824068A /* Pods_TheMinute.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71877454D77C442B962C072C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D89A7FA2DC2851BC0B666B0 /* Pods-TheMinute.debug.xcconfig */,
+				02A721E234EBD363B24D8BD7 /* Pods-TheMinute.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9D6D5E6F1C6BCC1E00363A06 = {
 			isa = PBXGroup;
 			children = (
-				9D6D5E7A1C6BCC1E00363A06 /* TheMinute */,
+				BDEB91C52DD1CB14CB2619BD /* Frameworks */,
+				71877454D77C442B962C072C /* Pods */,
 				9D6D5E791C6BCC1E00363A06 /* Products */,
+				9D6D5E7A1C6BCC1E00363A06 /* TheMinute */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +100,77 @@
 		9D6D5E7A1C6BCC1E00363A06 /* TheMinute */ = {
 			isa = PBXGroup;
 			children = (
+				9D6D5EAC1C6BCDF700363A06 /* Welcome */,
+				9D6D5E901C6BCC4300363A06 /* Article */,
+				9D6D5E911C6BCC4B00363A06 /* Feed */,
+				9D6D5E921C6BCC5100363A06 /* Resources */,
+				9D6D5EA71C6BCD5700363A06 /* Web View */,
 				9D6D5E7B1C6BCC1E00363A06 /* AppDelegate.swift */,
-				9D6D5E7D1C6BCC1E00363A06 /* ViewController.swift */,
-				9D6D5E7F1C6BCC1E00363A06 /* Main.storyboard */,
 				9D6D5E851C6BCC1E00363A06 /* Assets.xcassets */,
-				9D6D5E871C6BCC1E00363A06 /* LaunchScreen.storyboard */,
 				9D6D5E8A1C6BCC1E00363A06 /* Info.plist */,
+				9D6D5E871C6BCC1E00363A06 /* LaunchScreen.storyboard */,
+				9D6D5E7F1C6BCC1E00363A06 /* Main.storyboard */,
 				9D6D5E821C6BCC1E00363A06 /* TheMinute.xcdatamodeld */,
+				9D6D5E7D1C6BCC1E00363A06 /* ViewController.swift */,
 			);
 			path = TheMinute;
+			sourceTree = "<group>";
+		};
+		9D6D5E901C6BCC4300363A06 /* Article */ = {
+			isa = PBXGroup;
+			children = (
+				9D6D5EB11C6BCE7F00363A06 /* ArticleViewController.swift */,
+			);
+			path = Article;
+			sourceTree = "<group>";
+		};
+		9D6D5E911C6BCC4B00363A06 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				9D6D5EA31C6BCCC000363A06 /* FeedCollectionViewCell.swift */,
+				9D6D5EA51C6BCCE400363A06 /* FeedViewController.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		9D6D5E921C6BCC5100363A06 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9D6D5ED51C6BED0C00363A06 /* DomaineDisp-Medium.otf */,
+				9D6D5ED61C6BED0C00363A06 /* DomaineDisp-MediumItalic.otf */,
+				9D6D5ED71C6BED0C00363A06 /* DomaineDispNar-Black.otf */,
+				9D6D5ED81C6BED0C00363A06 /* DomaineDispNar-BlackItalic.otf */,
+				9D6D5ED91C6BED0C00363A06 /* National-Book.otf */,
+				9D6D5EDA1C6BED0C00363A06 /* National-BookItalic.otf */,
+				9D6D5EDB1C6BED0C00363A06 /* National-Medium.otf */,
+				9D6D5EDC1C6BED0C00363A06 /* National-MediumItalic.otf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9D6D5EA71C6BCD5700363A06 /* Web View */ = {
+			isa = PBXGroup;
+			children = (
+				9D6D5EB31C6BCEB100363A06 /* WebViewController.swift */,
+			);
+			path = "Web View";
+			sourceTree = "<group>";
+		};
+		9D6D5EAC1C6BCDF700363A06 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				9D6D5EAD1C6BCE2100363A06 /* WelcomeViewController.swift */,
+				9D6D5EAF1C6BCE4600363A06 /* WelcomeContentViewController.swift */,
+			);
+			name = Welcome;
+			sourceTree = "<group>";
+		};
+		BDEB91C52DD1CB14CB2619BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				711A3ADAA4CE0984C977F676 /* Pods_TheMinute.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +180,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D6D5E8D1C6BCC1E00363A06 /* Build configuration list for PBXNativeTarget "TheMinute" */;
 			buildPhases = (
+				D411BFCD322B3483987E325B /* Check Pods Manifest.lock */,
 				9D6D5E741C6BCC1E00363A06 /* Sources */,
 				9D6D5E751C6BCC1E00363A06 /* Frameworks */,
 				9D6D5E761C6BCC1E00363A06 /* Resources */,
+				FCB71FE59855D51A06D6255B /* Embed Pods Frameworks */,
+				D4D31FE237C6ED9880C322A7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -99,6 +208,7 @@
 				TargetAttributes = {
 					9D6D5E771C6BCC1E00363A06 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 6QUS6646W2;
 					};
 				};
 			};
@@ -125,21 +235,83 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D6D5EDE1C6BED0C00363A06 /* DomaineDisp-MediumItalic.otf in Resources */,
+				9D6D5EE01C6BED0C00363A06 /* DomaineDispNar-BlackItalic.otf in Resources */,
+				9D6D5EE31C6BED0C00363A06 /* National-Medium.otf in Resources */,
+				9D6D5EE41C6BED0C00363A06 /* National-MediumItalic.otf in Resources */,
+				9D6D5EDD1C6BED0C00363A06 /* DomaineDisp-Medium.otf in Resources */,
 				9D6D5E891C6BCC1E00363A06 /* LaunchScreen.storyboard in Resources */,
 				9D6D5E861C6BCC1E00363A06 /* Assets.xcassets in Resources */,
 				9D6D5E811C6BCC1E00363A06 /* Main.storyboard in Resources */,
+				9D6D5EE11C6BED0C00363A06 /* National-Book.otf in Resources */,
+				9D6D5EDF1C6BED0C00363A06 /* DomaineDispNar-Black.otf in Resources */,
+				9D6D5EE21C6BED0C00363A06 /* National-BookItalic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D411BFCD322B3483987E325B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D4D31FE237C6ED9880C322A7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheMinute/Pods-TheMinute-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCB71FE59855D51A06D6255B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheMinute/Pods-TheMinute-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9D6D5E741C6BCC1E00363A06 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D6D5EB41C6BCEB100363A06 /* WebViewController.swift in Sources */,
+				9D6D5EAE1C6BCE2100363A06 /* WelcomeViewController.swift in Sources */,
 				9D6D5E7E1C6BCC1E00363A06 /* ViewController.swift in Sources */,
 				9D6D5E7C1C6BCC1E00363A06 /* AppDelegate.swift in Sources */,
+				9D6D5EA61C6BCCE400363A06 /* FeedViewController.swift in Sources */,
+				9D6D5EA41C6BCCC000363A06 /* FeedCollectionViewCell.swift in Sources */,
+				9D6D5EB21C6BCE7F00363A06 /* ArticleViewController.swift in Sources */,
+				9D6D5EB01C6BCE4600363A06 /* WelcomeContentViewController.swift in Sources */,
 				9D6D5E841C6BCC1E00363A06 /* TheMinute.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,6 +325,7 @@
 				9D6D5E801C6BCC1E00363A06 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		9D6D5E871C6BCC1E00363A06 /* LaunchScreen.storyboard */ = {
@@ -161,6 +334,7 @@
 				9D6D5E881C6BCC1E00363A06 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -251,23 +425,31 @@
 		};
 		9D6D5E8E1C6BCC1E00363A06 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D89A7FA2DC2851BC0B666B0 /* Pods-TheMinute.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TheMinute/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sass.TheMinute;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		9D6D5E8F1C6BCC1E00363A06 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02A721E234EBD363B24D8BD7 /* Pods-TheMinute.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TheMinute/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sass.TheMinute;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -290,6 +472,7 @@
 				9D6D5E8F1C6BCC1E00363A06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

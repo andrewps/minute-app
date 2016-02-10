@@ -1,0 +1,10 @@
+PODS:
+  - WYInteractiveTransitions (0.2.2)
+
+DEPENDENCIES:
+  - WYInteractiveTransitions
+
+SPEC CHECKSUMS:
+  WYInteractiveTransitions: ddf464521ca4534a9d47b74f29e6e0ff561c126d
+
+COCOAPODS: 0.39.0

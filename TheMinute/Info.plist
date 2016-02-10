@@ -2,6 +2,17 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>DomaineDispNar-Black.otf</string>
+		<string>DomaineDispNar-BlackItalic.otf</string>
+		<string>DomaineDisp-Medium.otf</string>
+		<string>DomaineDisp-MediumItalic.otf</string>
+		<string>National-Medium.otf</string>
+		<string>National-MediumItalic.otf</string>
+		<string>National-Book.otf</string>
+		<string>National-BookItalic.otf</string>
+	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
