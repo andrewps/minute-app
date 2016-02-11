@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,8 +16,28 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="minute-seafoam" translatesAutoresizingMaskIntoConstraints="NO" id="8vD-UA-Hnd">
+                                <rect key="frame" x="249" y="288" width="102" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="102" id="KTJ-Uy-BTi"/>
+                                    <constraint firstAttribute="height" constant="24" id="RAQ-o3-3T0"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="102" id="avo-Hb-NCW"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="iOr-bF-69s"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="avo-Hb-NCW"/>
+                                        <exclude reference="iOr-bF-69s"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.42745098471641541" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="8vD-UA-Hnd" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="S73-Tn-APV"/>
+                            <constraint firstItem="8vD-UA-Hnd" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="SqU-MC-BGL"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +45,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="minute-seafoam" width="104" height="25"/>
+    </resources>
 </document>

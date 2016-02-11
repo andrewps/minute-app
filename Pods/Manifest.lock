@@ -1,10 +1,20 @@
 PODS:
+  - Appsee (2.1.5)
+  - Crashlytics (3.6.0):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.5)
   - WYInteractiveTransitions (0.2.2)
 
 DEPENDENCIES:
+  - Appsee
+  - Crashlytics
+  - Fabric
   - WYInteractiveTransitions
 
 SPEC CHECKSUMS:
+  Appsee: 77f144701aa1a53d854d319a46667561849e8cf5
+  Crashlytics: e4e8d02914f2608fbc7bf42b1a7af838b0db67a2
+  Fabric: 338ffd3c2afcab120638907b4251189de9ad17b3
   WYInteractiveTransitions: ddf464521ca4534a9d47b74f29e6e0ff561c126d
 
 COCOAPODS: 0.39.0

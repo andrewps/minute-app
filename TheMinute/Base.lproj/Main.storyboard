@@ -36,20 +36,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5W4-5P-jsv">
-                                <rect key="frame" x="20" y="530" width="560" height="50"/>
-                                <color key="backgroundColor" red="0.42745098469999998" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="UuF-Ty-AzM"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="National-Medium" family="National" pointSize="18"/>
-                                <state key="normal" title="Cool, Got It!">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="i7t-30-ixi" kind="show" id="3Bv-iA-egQ"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="minute" translatesAutoresizingMaskIntoConstraints="NO" id="0k1-Rf-20B">
                                 <rect key="frame" x="249" y="80" width="102" height="24"/>
                                 <constraints>
@@ -65,8 +51,22 @@
                                     </mask>
                                 </variation>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5W4-5P-jsv">
+                                <rect key="frame" x="20" y="540" width="560" height="40"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="UuF-Ty-AzM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="National-Medium" family="National" pointSize="18"/>
+                                <state key="normal" title="Cool, Got It!">
+                                    <color key="titleColor" red="0.42745098471641541" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="i7t-30-ixi" kind="show" id="3Bv-iA-egQ"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.32941177487373352" blue="0.4117647111415863" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.42745098471641541" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="5W4-5P-jsv" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Abx-n5-kVj"/>
                             <constraint firstItem="0k1-Rf-20B" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="HZH-pY-Qvo"/>
@@ -77,6 +77,7 @@
                     </view>
                     <connections>
                         <outlet property="coolButton" destination="5W4-5P-jsv" id="TrM-d3-XoJ"/>
+                        <outlet property="minuteLogo" destination="0k1-Rf-20B" id="k7k-wl-anH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -103,12 +104,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rdb-AV-bvo">
-                                <rect key="frame" x="20" y="200" width="560" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="6dY-i2-abi"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We find the best non-English news stories daily" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="oSA-hz-KEX">
                                 <rect key="frame" x="20" y="40" width="560" height="100"/>
                                 <constraints>
@@ -118,16 +113,29 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome 1" translatesAutoresizingMaskIntoConstraints="NO" id="Rdb-AV-bvo">
+                                <rect key="frame" x="113" y="140" width="375" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="6dY-i2-abi"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.32941177487373352" blue="0.4117647111415863" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.42745098471641541" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="Rdb-AV-bvo" firstAttribute="centerX" secondItem="yfd-50-kTJ" secondAttribute="centerX" id="EHW-HJ-oGk"/>
                             <constraint firstItem="oSA-hz-KEX" firstAttribute="trailing" secondItem="yfd-50-kTJ" secondAttribute="trailingMargin" id="HcS-oD-2TU"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Rdb-AV-bvo" secondAttribute="trailing" id="Iir-yP-IfU"/>
-                            <constraint firstItem="Rdb-AV-bvo" firstAttribute="top" secondItem="oSA-hz-KEX" secondAttribute="bottom" constant="60" id="Mvq-pE-PUc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Rdb-AV-bvo" secondAttribute="trailing" constant="65" id="Iir-yP-IfU"/>
+                            <constraint firstItem="Rdb-AV-bvo" firstAttribute="top" secondItem="oSA-hz-KEX" secondAttribute="bottom" id="Mvq-pE-PUc"/>
                             <constraint firstItem="oSA-hz-KEX" firstAttribute="leading" secondItem="yfd-50-kTJ" secondAttribute="leadingMargin" id="U5t-B8-1Pu"/>
                             <constraint firstItem="oSA-hz-KEX" firstAttribute="top" secondItem="rv8-GM-dPH" secondAttribute="bottom" constant="20" id="ei5-Nc-XUg"/>
-                            <constraint firstItem="Rdb-AV-bvo" firstAttribute="leading" secondItem="yfd-50-kTJ" secondAttribute="leadingMargin" id="yQb-Mf-aeH"/>
+                            <constraint firstItem="Rdb-AV-bvo" firstAttribute="leading" secondItem="yfd-50-kTJ" secondAttribute="leadingMargin" constant="66" id="yQb-Mf-aeH"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Iir-yP-IfU"/>
+                                <exclude reference="yQb-Mf-aeH"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="Rdb-AV-bvo" id="JHP-iJ-VKf"/>
@@ -141,7 +149,7 @@
         <!--Feed View Controller-->
         <scene sceneID="sZQ-mo-zns">
             <objects>
-                <viewController id="i7t-30-ixi" customClass="FeedViewController" customModule="minute" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="i7t-30-ixi" customClass="FeedViewController" customModule="TheMinute" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="I6A-17-za5"/>
                         <viewControllerLayoutGuide type="bottom" id="eIW-0I-R98"/>
@@ -151,7 +159,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5MA-gc-w9Q">
-                                <rect key="frame" x="20" y="0.0" width="560" height="600"/>
+                                <rect key="frame" x="20" y="60" width="560" height="540"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="0.0" id="rbo-fm-4E9">
                                     <size key="itemSize" width="180" height="180"/>
@@ -160,7 +168,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Feed Cell" id="xb6-dW-FlH" customClass="FeedCollectionViewCell" customModule="minute" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Feed Cell" id="xb6-dW-FlH" customClass="FeedCollectionViewCell" customModule="TheMinute" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -208,8 +216,8 @@
                                             <mask key="constraints">
                                                 <exclude reference="1gb-Yg-Lf9"/>
                                                 <exclude reference="4rn-Nb-vZv"/>
-                                                <exclude reference="WgS-vd-Fc6"/>
                                                 <exclude reference="4zc-DE-xev"/>
+                                                <exclude reference="WgS-vd-Fc6"/>
                                                 <exclude reference="KKS-Yy-MWk"/>
                                             </mask>
                                         </variation>
@@ -227,16 +235,43 @@
                                     <outlet property="delegate" destination="i7t-30-ixi" id="w3b-Qv-Y1J"/>
                                 </connections>
                             </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="88G-Ue-keU">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="minute" translatesAutoresizingMaskIntoConstraints="NO" id="pau-8K-YVM">
+                                        <rect key="frame" x="260" y="10" width="80" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="SCH-du-ltf"/>
+                                            <constraint firstAttribute="width" constant="80" id="j6K-oN-fec"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="pau-8K-YVM" firstAttribute="centerY" secondItem="88G-Ue-keU" secondAttribute="centerY" id="3cx-5X-iuT"/>
+                                    <constraint firstItem="pau-8K-YVM" firstAttribute="centerX" secondItem="88G-Ue-keU" secondAttribute="centerX" id="hiX-Wq-7Fi"/>
+                                    <constraint firstAttribute="height" constant="60" id="jvP-gO-QSE"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="5MA-gc-w9Q" firstAttribute="top" secondItem="pgr-8g-K9B" secondAttribute="topMargin" id="3uR-Xx-5iG"/>
+                            <constraint firstItem="88G-Ue-keU" firstAttribute="leading" secondItem="pgr-8g-K9B" secondAttribute="leadingMargin" constant="-20" id="Er8-KG-3Er"/>
+                            <constraint firstItem="88G-Ue-keU" firstAttribute="top" secondItem="pgr-8g-K9B" secondAttribute="topMargin" id="Qn9-Fn-qAz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="88G-Ue-keU" secondAttribute="trailing" constant="-20" id="R1o-qX-46j"/>
+                            <constraint firstItem="5MA-gc-w9Q" firstAttribute="top" secondItem="88G-Ue-keU" secondAttribute="bottom" id="YQX-AN-YJ5"/>
                             <constraint firstItem="5MA-gc-w9Q" firstAttribute="leading" secondItem="pgr-8g-K9B" secondAttribute="leadingMargin" id="bP6-Xc-UPd"/>
                             <constraint firstItem="5MA-gc-w9Q" firstAttribute="trailing" secondItem="pgr-8g-K9B" secondAttribute="trailingMargin" id="gfK-WA-viZ"/>
                             <constraint firstItem="eIW-0I-R98" firstAttribute="top" secondItem="5MA-gc-w9Q" secondAttribute="bottom" id="qxN-Ih-0C2"/>
+                            <constraint firstItem="5MA-gc-w9Q" firstAttribute="top" secondItem="88G-Ue-keU" secondAttribute="bottom" id="wWW-s3-9mn"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3uR-Xx-5iG"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="HWJ-Ib-ksP"/>
                     <connections>
                         <outlet property="FeedCollectionView" destination="5MA-gc-w9Q" id="8FV-68-oCi"/>
                         <outlet property="FeedFlow" destination="rbo-fm-4E9" id="0fB-rF-CeU"/>
@@ -249,7 +284,7 @@
         <!--Secret Documents: NSA Targeted Germany And EU Buildings-->
         <scene sceneID="NhP-zx-chn">
             <objects>
-                <viewController id="CQ4-mY-cdu" customClass="ArticleViewController" customModule="minute" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CQ4-mY-cdu" customClass="ArticleViewController" customModule="TheMinute" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zYj-gG-3HA"/>
                         <viewControllerLayoutGuide type="bottom" id="DNa-St-Cax"/>
@@ -261,8 +296,8 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69B-mM-udI">
                                 <rect key="frame" x="0.0" y="20" width="600" height="1380"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0LP-pU-v6d">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="984"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0LP-pU-v6d">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="1033"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bec-D1-ZJ7">
                                                 <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
@@ -290,8 +325,8 @@
                                                 <variation key="default">
                                                     <mask key="constraints">
                                                         <exclude reference="0RC-Fa-V89"/>
-                                                        <exclude reference="dKD-16-jQX"/>
                                                         <exclude reference="NwQ-jy-Rn3"/>
+                                                        <exclude reference="dKD-16-jQX"/>
                                                         <exclude reference="6JT-kk-Yi1"/>
                                                     </mask>
                                                 </variation>
@@ -369,19 +404,19 @@
                                                     </mask>
                                                 </variation>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cqa-Re-uvd">
-                                                <rect key="frame" x="0.0" y="250" width="600" height="594"/>
+                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cqa-Re-uvd">
+                                                <rect key="frame" x="0.0" y="250" width="600" height="653"/>
                                                 <subviews>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FJC-rY-YmJ">
                                                         <rect key="frame" x="20" y="20" width="560" height="554"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <mutableString key="text">German Social Democrats are demanding that Berlin investigate top managers at the American intelligence agency NSA for alleged espionage. It's just the latest example of how the vast spying scandal is making waves in the German election campaign.
+                                                        <string key="text">German Social Democrats are demanding that Berlin investigate top managers at the American intelligence agency NSA for alleged espionage. It's just the latest example of how the vast spying scandal is making waves in the German election campaign.
 
 Until early this week, Angela Merkel's re-election campaign had gone entirely to her liking. The center-left candidate Peer Steinbrück was having trouble gaining traction, controversial issues were few and far between and the chancellor herself was content to pursue her preferred campaign strategy: that of saying and doing as little as possible.
 
 German Social Democrats are demanding that Berlin investigate top managers at the American intelligence agency NSA for alleged espionage. It's just the latest example of how the vast spying scandal is making waves in the German election campaign.
 
-Until early this week, Angela Merkel's re-election campaign had gone entirely to her liking. The center-left candidate Peer Steinbrück was having trouble gaining traction, controversial issues were few and far between and the chancellor herself was content to pursue her preferred campaign strategy: that of saying and doing as little as possible.</mutableString>
+Until early this week, Angela Merkel's re-election campaign had gone entirely to her liking. The center-left candidate Peer Steinbrück was having trouble gaining traction, controversial issues were few and far between and the chancellor herself was content to pursue her preferred campaign strategy: that of saying and doing as little as possible.</string>
                                                         <fontDescription key="fontDescription" name="National-Book" family="National" pointSize="20"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
@@ -401,8 +436,8 @@ Until early this week, Angela Merkel's re-election campaign had gone entirely to
                                                     </mask>
                                                 </variation>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wBJ-eU-Wvv">
-                                                <rect key="frame" x="0.0" y="844" width="600" height="50"/>
+                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wBJ-eU-Wvv">
+                                                <rect key="frame" x="0.0" y="903" width="600" height="50"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Originally appeared on speigel.de" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epJ-4G-QLB">
                                                         <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
@@ -420,14 +455,14 @@ Until early this week, Angela Merkel's re-election campaign had gone entirely to
                                                     <constraint firstAttribute="bottom" secondItem="epJ-4G-QLB" secondAttribute="bottom" id="xmp-d3-OJM"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YGb-mu-WM6">
-                                                <rect key="frame" x="0.0" y="894" width="600" height="90"/>
+                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YGb-mu-WM6">
+                                                <rect key="frame" x="0.0" y="953" width="600" height="80"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ih-Wl-1Pe">
-                                                        <rect key="frame" x="20" y="20" width="560" height="50"/>
+                                                        <rect key="frame" x="20" y="20" width="560" height="40"/>
                                                         <color key="backgroundColor" red="0.42745098469999998" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="50" id="sBe-F0-pPM"/>
+                                                            <constraint firstAttribute="height" constant="40" id="sBe-F0-pPM"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="National-Medium" family="National" pointSize="15"/>
                                                         <state key="normal" title="View Original Article">
@@ -450,8 +485,8 @@ Until early this week, Angela Merkel's re-election campaign had gone entirely to
                                                 </constraints>
                                                 <variation key="default">
                                                     <mask key="constraints">
-                                                        <exclude reference="EhP-Ec-Od0"/>
                                                         <exclude reference="0OX-PR-RKd"/>
+                                                        <exclude reference="EhP-Ec-Od0"/>
                                                         <exclude reference="ZVY-UG-6sf"/>
                                                     </mask>
                                                 </variation>
@@ -544,5 +579,6 @@ Until early this week, Angela Merkel's re-election campaign had gone entirely to
         <image name="close" width="40" height="40"/>
         <image name="half-tone" width="375" height="240"/>
         <image name="minute" width="103" height="25"/>
+        <image name="welcome 1" width="375" height="280"/>
     </resources>
 </document>

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '504FF6D76D2D2CBABE21DD11'
+               BlueprintIdentifier = 'E2F9BD4083FCB393E362594D'
                BlueprintName = 'WYInteractiveTransitions-WYInteractiveTransitions'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'WYInteractiveTransitions.bundle'>

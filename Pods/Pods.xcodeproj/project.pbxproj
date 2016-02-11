@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1198567CEA2DA5F7690EC6AE90F888D9 /* WYInteractiveTransitions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E47CC27ED686BF5CF2BED77ACDD7C05F /* WYInteractiveTransitions-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1198567CEA2DA5F7690EC6AE90F888D9 /* WYInteractiveTransitions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FD47A63D2BB44355B4E2A7C064A3AD3B /* WYInteractiveTransitions-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		313E0832818C03F24D8C2B2873D1F8E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		846487ABA4322EEA92AF3341E872FB6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		9E883B3E36CE679600774789CBE61491 /* WYInteractiveTransitions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AF2E1155BA1286F7AAA7A900E8F2DD /* WYInteractiveTransitions-dummy.m */; };
+		9E883B3E36CE679600774789CBE61491 /* WYInteractiveTransitions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 081AA19774348665CA826AA76DB6124B /* WYInteractiveTransitions-dummy.m */; };
 		9F890057184BBF41899DC7DAEFA2AD06 /* Pods-TheMinute-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B71889DDB6A38260D2E59B64A4F2331 /* Pods-TheMinute-dummy.m */; };
 		C907221070DA8E478A5B3AEF98971315 /* WYInteractiveTransitions.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EABBB38757A9CAE413579C0204F39D3A /* WYInteractiveTransitions.bundle */; };
 		D41557D40CBE571D5912855D52D9156A /* Pods-TheMinute-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A7A20E70E8B191ECC38010CBB95331EB /* Pods-TheMinute-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F1C9181BCCD180B90E61F1CFFC0682EB /* WYInteractiveTransitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F015EB823062F216D3A970F6A28C69 /* WYInteractiveTransitions.swift */; };
+		F1C9181BCCD180B90E61F1CFFC0682EB /* WYInteractiveTransitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA12B3F69DD0718B08A591B2A0D4367 /* WYInteractiveTransitions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,27 +36,30 @@
 
 /* Begin PBXFileReference section */
 		04DDF36EF0B553154E2A7FD59ECCF0D7 /* Pods-TheMinute-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TheMinute-resources.sh"; sourceTree = "<group>"; };
-		14AEB2D1AF3915E6F5FDCCC99A57A162 /* WYInteractiveTransitions.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WYInteractiveTransitions.xcconfig; sourceTree = "<group>"; };
+		081AA19774348665CA826AA76DB6124B /* WYInteractiveTransitions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WYInteractiveTransitions-dummy.m"; sourceTree = "<group>"; };
+		1D77ADB2DC2C84F28E42C70627A22C86 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3F951557E97D3C6FFAE12AE053368F4E /* WYInteractiveTransitions-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WYInteractiveTransitions-prefix.pch"; sourceTree = "<group>"; };
 		460589558B5CE2B081063DEB6535E84A /* Pods-TheMinute-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TheMinute-acknowledgements.markdown"; sourceTree = "<group>"; };
-		52AF2E1155BA1286F7AAA7A900E8F2DD /* WYInteractiveTransitions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WYInteractiveTransitions-dummy.m"; sourceTree = "<group>"; };
 		575068609D24A30164B905F174E6F018 /* Pods-TheMinute.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TheMinute.modulemap"; sourceTree = "<group>"; };
-		58F015EB823062F216D3A970F6A28C69 /* WYInteractiveTransitions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WYInteractiveTransitions.swift; path = Pod/Classes/WYInteractiveTransitions.swift; sourceTree = "<group>"; };
-		5A236E30144302A323CF8270D47B506C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		64D5FB9F03A47E5CCBE836BF3F765976 /* WYInteractiveTransitions.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = WYInteractiveTransitions.modulemap; sourceTree = "<group>"; };
+		59C21319E49310781F66CAF25792649B /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
+		5AA12B3F69DD0718B08A591B2A0D4367 /* WYInteractiveTransitions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WYInteractiveTransitions.swift; path = Pod/Classes/WYInteractiveTransitions.swift; sourceTree = "<group>"; };
 		84B613322AC3265E093D21C6F7DB8DAE /* Pods-TheMinute-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TheMinute-frameworks.sh"; sourceTree = "<group>"; };
+		887133C11519EC6DF5BA82AF7F18104D /* WYInteractiveTransitions.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = WYInteractiveTransitions.modulemap; sourceTree = "<group>"; };
 		8B71889DDB6A38260D2E59B64A4F2331 /* Pods-TheMinute-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TheMinute-dummy.m"; sourceTree = "<group>"; };
 		9AAA2C1EF123B0C22FA4F3D161C1C1A3 /* Pods-TheMinute-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TheMinute-acknowledgements.plist"; sourceTree = "<group>"; };
 		A1500A19627E2A3BFDC1CA08BF160303 /* Pods-TheMinute.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TheMinute.release.xcconfig"; sourceTree = "<group>"; };
+		A4B50B3189D641FAB41736A52C845BA3 /* WYInteractiveTransitions-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WYInteractiveTransitions-prefix.pch"; sourceTree = "<group>"; };
+		A659FFDDE263D9582786EF40226E8968 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7A20E70E8B191ECC38010CBB95331EB /* Pods-TheMinute-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TheMinute-umbrella.h"; sourceTree = "<group>"; };
 		B082CC158909209BEFDC758394BBB2A8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D0D3F2A335B9DB0FC847486141382C97 /* WYInteractiveTransitions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WYInteractiveTransitions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7CED9DE5C9E7F5CCB216C8DBCA72DE7 /* Pods_TheMinute.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheMinute.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E47CC27ED686BF5CF2BED77ACDD7C05F /* WYInteractiveTransitions-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WYInteractiveTransitions-umbrella.h"; sourceTree = "<group>"; };
+		E4E5AF0FF5C0C5ABE692E329A6D21E40 /* Appsee.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Appsee.framework; path = Appsee/Appsee.framework; sourceTree = "<group>"; };
 		EABBB38757A9CAE413579C0204F39D3A /* WYInteractiveTransitions.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WYInteractiveTransitions.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF4E03F34CAC07EDAB91FA22237D110D /* Pods-TheMinute.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TheMinute.debug.xcconfig"; sourceTree = "<group>"; };
+		FD47A63D2BB44355B4E2A7C064A3AD3B /* WYInteractiveTransitions-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WYInteractiveTransitions-umbrella.h"; sourceTree = "<group>"; };
+		FDAAC75E69EAD5129A497E4DB2F4F975 /* WYInteractiveTransitions.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WYInteractiveTransitions.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0588F3EC576068210DD5E54AEB7392F0 /* WYInteractiveTransitions */ = {
+			isa = PBXGroup;
+			children = (
+				5AA12B3F69DD0718B08A591B2A0D4367 /* WYInteractiveTransitions.swift */,
+				F51A46E1117EC87294F695BD3C145570 /* Support Files */,
+			);
+			path = WYInteractiveTransitions;
+			sourceTree = "<group>";
+		};
+		0B4A0955FF7CA32238590BD2EA8CFD49 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4E5AF0FF5C0C5ABE692E329A6D21E40 /* Appsee.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		30CEE5C1AA907E9CDAC3F14EB5DD0461 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,10 +129,18 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				B0D1BE6E6BE0860D866523EB4EEB19A1 /* Pods */,
+				B1BA0A47E01C4AC1C0B383172CFF1952 /* Pods */,
 				4F37480481D54545DE6F3BA4FFD96181 /* Products */,
 				30CEE5C1AA907E9CDAC3F14EB5DD0461 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		95EDFAE3D6382CB083E33A8764BB2CC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D77ADB2DC2C84F28E42C70627A22C86 /* Crashlytics.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		9ABE55521B082FAE9931FAE92E4E683A /* Pods-TheMinute */ = {
@@ -133,35 +161,23 @@
 			path = "Target Support Files/Pods-TheMinute";
 			sourceTree = "<group>";
 		};
-		AD98496935E6F366B3391C7529A6F64C /* WYInteractiveTransitions */ = {
+		9D63E08F4A519AEC9C8313182055FD62 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				58F015EB823062F216D3A970F6A28C69 /* WYInteractiveTransitions.swift */,
-				B21B8DA054842B68307BEE5BCA062A2B /* Support Files */,
+				59C21319E49310781F66CAF25792649B /* Fabric.framework */,
 			);
-			path = WYInteractiveTransitions;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B0D1BE6E6BE0860D866523EB4EEB19A1 /* Pods */ = {
+		B1BA0A47E01C4AC1C0B383172CFF1952 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AD98496935E6F366B3391C7529A6F64C /* WYInteractiveTransitions */,
+				C75028BF2CFCE1076EA1D563A5BD4E76 /* Appsee */,
+				FD1EDB8E0DFC4707F5AB24E1754075D6 /* Crashlytics */,
+				ECA76C75E9A7896C6DEF7A600C7E6729 /* Fabric */,
+				0588F3EC576068210DD5E54AEB7392F0 /* WYInteractiveTransitions */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		B21B8DA054842B68307BEE5BCA062A2B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5A236E30144302A323CF8270D47B506C /* Info.plist */,
-				64D5FB9F03A47E5CCBE836BF3F765976 /* WYInteractiveTransitions.modulemap */,
-				14AEB2D1AF3915E6F5FDCCC99A57A162 /* WYInteractiveTransitions.xcconfig */,
-				52AF2E1155BA1286F7AAA7A900E8F2DD /* WYInteractiveTransitions-dummy.m */,
-				3F951557E97D3C6FFAE12AE053368F4E /* WYInteractiveTransitions-prefix.pch */,
-				E47CC27ED686BF5CF2BED77ACDD7C05F /* WYInteractiveTransitions-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/WYInteractiveTransitions";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -178,6 +194,44 @@
 				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		C75028BF2CFCE1076EA1D563A5BD4E76 /* Appsee */ = {
+			isa = PBXGroup;
+			children = (
+				0B4A0955FF7CA32238590BD2EA8CFD49 /* Frameworks */,
+			);
+			path = Appsee;
+			sourceTree = "<group>";
+		};
+		ECA76C75E9A7896C6DEF7A600C7E6729 /* Fabric */ = {
+			isa = PBXGroup;
+			children = (
+				9D63E08F4A519AEC9C8313182055FD62 /* Frameworks */,
+			);
+			path = Fabric;
+			sourceTree = "<group>";
+		};
+		F51A46E1117EC87294F695BD3C145570 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A659FFDDE263D9582786EF40226E8968 /* Info.plist */,
+				887133C11519EC6DF5BA82AF7F18104D /* WYInteractiveTransitions.modulemap */,
+				FDAAC75E69EAD5129A497E4DB2F4F975 /* WYInteractiveTransitions.xcconfig */,
+				081AA19774348665CA826AA76DB6124B /* WYInteractiveTransitions-dummy.m */,
+				A4B50B3189D641FAB41736A52C845BA3 /* WYInteractiveTransitions-prefix.pch */,
+				FD47A63D2BB44355B4E2A7C064A3AD3B /* WYInteractiveTransitions-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/WYInteractiveTransitions";
+			sourceTree = "<group>";
+		};
+		FD1EDB8E0DFC4707F5AB24E1754075D6 /* Crashlytics */ = {
+			isa = PBXGroup;
+			children = (
+				95EDFAE3D6382CB083E33A8764BB2CC8 /* Frameworks */,
+			);
+			path = Crashlytics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,7 +432,7 @@
 		};
 		3F63D0785C3D4B72F8473BC7F6356046 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14AEB2D1AF3915E6F5FDCCC99A57A162 /* WYInteractiveTransitions.xcconfig */;
+			baseConfigurationReference = FDAAC75E69EAD5129A497E4DB2F4F975 /* WYInteractiveTransitions.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -444,7 +498,7 @@
 		};
 		97F2B34ADC09D1B870A3733A2F73855C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14AEB2D1AF3915E6F5FDCCC99A57A162 /* WYInteractiveTransitions.xcconfig */;
+			baseConfigurationReference = FDAAC75E69EAD5129A497E4DB2F4F975 /* WYInteractiveTransitions.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -472,7 +526,7 @@
 		};
 		99440EE0E254A42789AC666064D57250 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14AEB2D1AF3915E6F5FDCCC99A57A162 /* WYInteractiveTransitions.xcconfig */;
+			baseConfigurationReference = FDAAC75E69EAD5129A497E4DB2F4F975 /* WYInteractiveTransitions.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = WYInteractiveTransitions;
@@ -518,7 +572,7 @@
 		};
 		CE248E4E656D94AC9932A38EBC6D5AC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14AEB2D1AF3915E6F5FDCCC99A57A162 /* WYInteractiveTransitions.xcconfig */;
+			baseConfigurationReference = FDAAC75E69EAD5129A497E4DB2F4F975 /* WYInteractiveTransitions.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = WYInteractiveTransitions;
