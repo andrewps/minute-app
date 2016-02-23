@@ -11,6 +11,7 @@ import WYInteractiveTransitions
 
 class FeedViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
+    @IBOutlet weak var nav: UIView!
     @IBOutlet weak var FeedCollectionView: UICollectionView!
     @IBOutlet weak var FeedFlow: UICollectionViewFlowLayout!
     
@@ -41,10 +42,7 @@ class FeedViewController: UIViewController, UICollectionViewDataSource, UICollec
     ]
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // Add Minute Logo to Navbar
-        navigationItem.titleView = UIImageView(image: UIImage(named: "minute"))
+        super.viewDidLoad()        
         
         // # MARK: Pull To Refresh
         refreshControl.addTarget(self, action: "refresh", forControlEvents: .ValueChanged)

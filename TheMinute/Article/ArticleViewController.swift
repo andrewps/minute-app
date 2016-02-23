@@ -15,6 +15,7 @@ class ArticleViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var stackView: UIStackView!
     
+    @IBOutlet weak var articleBottom: UIView!
     
     @IBOutlet weak var shareButton: UIButton!
     
@@ -41,6 +42,21 @@ class ArticleViewController: UIViewController {
         
         articleFooterButton.layer.cornerRadius = 20
         articleFooterButton.layer.masksToBounds = true
+        
+        
+        let topBorder: CALayer = CALayer()
+        topBorder.frame = CGRectMake(0.0, 0.0, articleBottom.frame.size.width, 1.0)
+        topBorder.backgroundColor = minPurple.CGColor
+        articleBottom.layer.addSublayer(topBorder)
+        
+        let bottomBorder: CALayer = CALayer()
+//        bottomBorder.frame = CGRectMake(0.0, 1.0, articleMeta.frame.size.width, 1.0)
+        bottomBorder.frame = CGRectMake(0.0, 49.0, articleMeta.frame.size.width, 1.0)
+        bottomBorder.backgroundColor = CGColorCreateCopyWithAlpha(minPurple.CGColor, 0.1)
+        articleMeta.layer.addSublayer(bottomBorder)
+        
+        
+        shareButton.imageEdgeInsets = UIEdgeInsetsMake(0, 65, 0, 0);
         
     }
     

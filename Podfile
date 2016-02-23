@@ -5,9 +5,9 @@ use_frameworks!
 
 target 'TheMinute' do
     
-    pod 'Fabric'
-    pod 'Crashlytics'
-    pod 'Appsee'
+    pod "Fabric"
+    pod "Crashlytics"
+    pod "Appsee"
     
     pod "WYInteractiveTransitions"
 

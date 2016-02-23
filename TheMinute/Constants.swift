@@ -9,6 +9,7 @@
 import UIKit
 
 var minSeafoam = UIColor(red: 120/255, green: 248/255, blue: 222/255, alpha: 1.0)
+var minPurple = UIColor(red: 109/255, green: 0/255, blue: 255/255, alpha: 1.0)
 
 var facebookColor = UIColor(red: 59/255, green: 89/255, blue: 152/255, alpha: 1.0)
 var twitterColor = UIColor(red: 85/255, green: 172/255, blue: 238/255, alpha: 1.0)

@@ -21,6 +21,7 @@
             <string>National-Medium</string>
             <string>National-Medium</string>
             <string>National-Medium</string>
+            <string>National-Medium</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -75,6 +76,7 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5W4-5P-jsv" secondAttribute="bottom" constant="20" id="y2J-4X-hYM"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
                         <outlet property="coolButton" destination="5W4-5P-jsv" id="TrM-d3-XoJ"/>
                         <outlet property="minuteLogo" destination="0k1-Rf-20B" id="k7k-wl-anH"/>
@@ -87,7 +89,9 @@
         <!--Page View Controller-->
         <scene sceneID="uEU-R4-QfU">
             <objects>
-                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="g86-Ko-kSU" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="g86-Ko-kSU" sceneMemberID="viewController">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cDy-YJ-Mtg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1103" y="333"/>
@@ -137,6 +141,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
                         <outlet property="imageView" destination="Rdb-AV-bvo" id="JHP-iJ-VKf"/>
                         <outlet property="titleLabel" destination="oSA-hz-KEX" id="pgp-CL-AUO"/>
@@ -246,7 +251,7 @@
                                         </constraints>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="pau-8K-YVM" firstAttribute="centerY" secondItem="88G-Ue-keU" secondAttribute="centerY" id="3cx-5X-iuT"/>
                                     <constraint firstItem="pau-8K-YVM" firstAttribute="centerX" secondItem="88G-Ue-keU" secondAttribute="centerX" id="hiX-Wq-7Fi"/>
@@ -275,6 +280,7 @@
                     <connections>
                         <outlet property="FeedCollectionView" destination="5MA-gc-w9Q" id="8FV-68-oCi"/>
                         <outlet property="FeedFlow" destination="rbo-fm-4E9" id="0fB-rF-CeU"/>
+                        <outlet property="nav" destination="88G-Ue-keU" id="S35-cL-741"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wBK-iQ-5lT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -294,14 +300,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69B-mM-udI">
-                                <rect key="frame" x="0.0" y="20" width="600" height="1380"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="1400"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0LP-pU-v6d">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0LP-pU-v6d">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="1033"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bec-D1-ZJ7">
                                                 <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
                                                 <subviews>
+                                                    <imageView userInteractionEnabled="NO" alpha="0.25" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample-article-image" translatesAutoresizingMaskIntoConstraints="NO" id="IHJ-hb-cKz">
+                                                        <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                                                    </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secret Documents: NSA Targeted Germany And EU Buildings" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="ps9-g8-Epa">
                                                         <rect key="frame" x="20" y="80" width="560" height="100"/>
                                                         <fontDescription key="fontDescription" name="DomaineDispNarBlack" family="Domaine Display Narrow" pointSize="40"/>
@@ -310,15 +319,19 @@
                                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.0" green="0.66666668650000005" blue="0.99607843159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.42745098471641541" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="0RC-Fa-V89"/>
                                                     <constraint firstItem="ps9-g8-Epa" firstAttribute="centerY" secondItem="bec-D1-ZJ7" secondAttribute="centerY" id="6JT-kk-Yi1"/>
+                                                    <constraint firstItem="IHJ-hb-cKz" firstAttribute="leading" secondItem="bec-D1-ZJ7" secondAttribute="leading" id="GeR-x7-B8S"/>
+                                                    <constraint firstAttribute="bottom" secondItem="IHJ-hb-cKz" secondAttribute="bottom" id="HaW-GG-yug"/>
                                                     <constraint firstAttribute="bottom" secondItem="ps9-g8-Epa" secondAttribute="bottom" constant="20" id="Hk9-My-bdw"/>
                                                     <constraint firstAttribute="height" constant="200" id="KFh-kC-wjs"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="NwQ-jy-Rn3"/>
                                                     <constraint firstItem="ps9-g8-Epa" firstAttribute="leading" secondItem="bec-D1-ZJ7" secondAttribute="leading" constant="20" id="RxN-N0-5le"/>
+                                                    <constraint firstItem="IHJ-hb-cKz" firstAttribute="top" secondItem="bec-D1-ZJ7" secondAttribute="top" id="XX6-XY-O65"/>
                                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="600" id="dKD-16-jQX"/>
+                                                    <constraint firstAttribute="trailing" secondItem="IHJ-hb-cKz" secondAttribute="trailing" id="npW-Kh-w2G"/>
                                                     <constraint firstAttribute="trailing" secondItem="ps9-g8-Epa" secondAttribute="trailing" constant="20" id="qYz-rP-FjM"/>
                                                     <constraint firstItem="ps9-g8-Epa" firstAttribute="top" secondItem="bec-D1-ZJ7" secondAttribute="top" constant="80" id="v3A-rc-agv"/>
                                                 </constraints>
@@ -344,7 +357,7 @@
                                                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="June 21 2014" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1c3-Un-skN">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="June 21 2014" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1c3-Un-skN">
                                                         <rect key="frame" x="222" y="9" width="83" height="32"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="102" id="ADa-R3-Ohd"/>
@@ -359,7 +372,7 @@
                                                             </mask>
                                                         </variation>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Translated from German" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fee-aP-acx">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Translated from German" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fee-aP-acx">
                                                         <rect key="frame" x="62" y="9" width="155" height="32"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="66" id="qQ5-97-4B0"/>
@@ -375,7 +388,7 @@
                                                         </variation>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.97254901959999995" green="0.97647058819999999" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstItem="Fee-aP-acx" firstAttribute="centerY" secondItem="U9A-6l-08c" secondAttribute="centerY" id="2fP-Ni-aPd"/>
                                                     <constraint firstAttribute="height" constant="50" id="4g1-dM-UmA"/>
@@ -404,10 +417,10 @@
                                                     </mask>
                                                 </variation>
                                             </view>
-                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cqa-Re-uvd">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cqa-Re-uvd">
                                                 <rect key="frame" x="0.0" y="250" width="600" height="653"/>
                                                 <subviews>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FJC-rY-YmJ">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FJC-rY-YmJ">
                                                         <rect key="frame" x="20" y="20" width="560" height="554"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <string key="text">German Social Democrats are demanding that Berlin investigate top managers at the American intelligence agency NSA for alleged espionage. It's just the latest example of how the vast spying scandal is making waves in the German election campaign.
@@ -436,7 +449,7 @@ Until early this week, Angela Merkel's re-election campaign had gone entirely to
                                                     </mask>
                                                 </variation>
                                             </view>
-                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wBJ-eU-Wvv">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wBJ-eU-Wvv">
                                                 <rect key="frame" x="0.0" y="903" width="600" height="50"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Originally appeared on speigel.de" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epJ-4G-QLB">
@@ -455,7 +468,7 @@ Until early this week, Angela Merkel's re-election campaign had gone entirely to
                                                     <constraint firstAttribute="bottom" secondItem="epJ-4G-QLB" secondAttribute="bottom" id="xmp-d3-OJM"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YGb-mu-WM6">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YGb-mu-WM6">
                                                 <rect key="frame" x="0.0" y="953" width="600" height="80"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ih-Wl-1Pe">
@@ -494,36 +507,91 @@ Until early this week, Angela Merkel's re-election campaign had gone entirely to
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="0LP-pU-v6d" firstAttribute="width" secondItem="69B-mM-udI" secondAttribute="width" id="53d-5f-gOt"/>
                                     <constraint firstItem="0LP-pU-v6d" firstAttribute="leading" secondItem="69B-mM-udI" secondAttribute="leading" id="LR3-uP-C8o"/>
                                     <constraint firstAttribute="trailing" secondItem="0LP-pU-v6d" secondAttribute="trailing" id="ZfX-e9-3UP"/>
-                                    <constraint firstAttribute="bottom" secondItem="0LP-pU-v6d" secondAttribute="bottom" id="b08-Ux-YpG"/>
+                                    <constraint firstAttribute="bottom" secondItem="0LP-pU-v6d" secondAttribute="bottom" constant="40" id="b08-Ux-YpG"/>
                                     <constraint firstItem="0LP-pU-v6d" firstAttribute="top" secondItem="69B-mM-udI" secondAttribute="top" id="md2-WL-kOI"/>
                                 </constraints>
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YM7-Of-qaU">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+                                <rect key="frame" x="0.0" y="1360" width="600" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFa-G8-UgC">
-                                        <rect key="frame" x="0.0" y="20" width="60" height="40"/>
+                                        <rect key="frame" x="10" y="0.0" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="ajh-Mp-KBU"/>
-                                            <constraint firstAttribute="width" constant="60" id="fqV-4h-tTI"/>
+                                            <constraint firstAttribute="width" constant="40" id="fqV-4h-tTI"/>
                                         </constraints>
                                         <state key="normal" image="close"/>
                                         <connections>
                                             <action selector="closeArticle:" destination="CQ4-mY-cdu" eventType="touchUpInside" id="dKr-P6-owL"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNq-VE-fen">
+                                        <rect key="frame" x="70" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="7hj-Qi-H7h"/>
+                                            <constraint firstAttribute="width" constant="40" id="xtg-mE-cU4"/>
+                                            <constraint firstAttribute="height" constant="40" id="zbN-Dy-nuL"/>
+                                        </constraints>
+                                        <state key="normal" image="prev"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="xtg-mE-cU4"/>
+                                            </mask>
+                                        </variation>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESB-E9-cDQ">
+                                        <rect key="frame" x="130" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="E6Q-rD-7cK"/>
+                                            <constraint firstAttribute="height" constant="40" id="P2d-Oc-H1x"/>
+                                            <constraint firstAttribute="width" constant="40" id="xph-sR-Fkh"/>
+                                        </constraints>
+                                        <state key="normal" image="next"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="xph-sR-Fkh"/>
+                                            </mask>
+                                        </variation>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJ4-KX-H5m">
+                                        <rect key="frame" x="510" y="0.0" width="80" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="I6T-hO-Nhd"/>
+                                            <constraint firstAttribute="width" constant="40" id="IJn-dY-g0m"/>
+                                            <constraint firstAttribute="height" constant="40" id="b4h-Rg-oen"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="National-Medium" family="National" pointSize="18"/>
+                                        <state key="normal" title="Share" image="share">
+                                            <color key="titleColor" red="0.42745098471641541" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="IJn-dY-g0m"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="shareButton:" destination="CQ4-mY-cdu" eventType="touchUpInside" id="9cD-em-MzM"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.97254902124404907" green="0.97647058963775635" blue="0.98039215803146362" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="dFa-G8-UgC" firstAttribute="top" secondItem="YM7-Of-qaU" secondAttribute="top" constant="20" id="0T6-Oz-HH1"/>
-                                    <constraint firstItem="dFa-G8-UgC" firstAttribute="leading" secondItem="YM7-Of-qaU" secondAttribute="leading" id="4dF-2Y-1y8"/>
+                                    <constraint firstItem="dFa-G8-UgC" firstAttribute="top" secondItem="YM7-Of-qaU" secondAttribute="top" id="0T6-Oz-HH1"/>
+                                    <constraint firstAttribute="bottom" secondItem="EJ4-KX-H5m" secondAttribute="bottom" id="1C8-wz-hLy"/>
+                                    <constraint firstItem="dFa-G8-UgC" firstAttribute="leading" secondItem="YM7-Of-qaU" secondAttribute="leading" constant="10" id="4dF-2Y-1y8"/>
                                     <constraint firstAttribute="bottom" secondItem="dFa-G8-UgC" secondAttribute="bottom" id="4pe-7b-57G"/>
-                                    <constraint firstAttribute="height" constant="60" id="gaj-Xu-d7A"/>
+                                    <constraint firstAttribute="bottom" secondItem="yNq-VE-fen" secondAttribute="bottom" id="Gib-Lp-KvU"/>
+                                    <constraint firstItem="yNq-VE-fen" firstAttribute="leading" secondItem="dFa-G8-UgC" secondAttribute="trailing" constant="20" id="JVJ-ot-EgM"/>
+                                    <constraint firstItem="EJ4-KX-H5m" firstAttribute="top" secondItem="YM7-Of-qaU" secondAttribute="top" id="Tei-Pf-1Im"/>
+                                    <constraint firstAttribute="trailing" secondItem="EJ4-KX-H5m" secondAttribute="trailing" constant="10" id="eY3-O3-btb"/>
+                                    <constraint firstAttribute="height" constant="40" id="gaj-Xu-d7A"/>
+                                    <constraint firstAttribute="bottom" secondItem="ESB-E9-cDQ" secondAttribute="bottom" id="rj5-RZ-7Es"/>
+                                    <constraint firstItem="ESB-E9-cDQ" firstAttribute="leading" secondItem="yNq-VE-fen" secondAttribute="trailing" constant="20" id="tGO-3F-aV0"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -531,15 +599,17 @@ Until early this week, Angela Merkel's re-election campaign had gone entirely to
                             <constraint firstAttribute="trailingMargin" secondItem="69B-mM-udI" secondAttribute="trailing" constant="-20" id="DVm-N5-vEn"/>
                             <constraint firstItem="69B-mM-udI" firstAttribute="leading" secondItem="PTP-9j-D1X" secondAttribute="leadingMargin" constant="-20" id="IZw-sQ-9CO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="YM7-Of-qaU" secondAttribute="trailing" constant="-20" id="UfO-KZ-WvV"/>
+                            <constraint firstItem="DNa-St-Cax" firstAttribute="top" secondItem="YM7-Of-qaU" secondAttribute="bottom" id="Uqb-ds-a6V"/>
                             <constraint firstItem="69B-mM-udI" firstAttribute="height" secondItem="PTP-9j-D1X" secondAttribute="height" id="YgB-Ql-Lbh"/>
                             <constraint firstItem="YM7-Of-qaU" firstAttribute="top" secondItem="PTP-9j-D1X" secondAttribute="topMargin" id="gzZ-v9-fNB"/>
                             <constraint firstAttribute="bottom" secondItem="69B-mM-udI" secondAttribute="bottom" id="k4V-ZZ-UxR"/>
                             <constraint firstItem="DNa-St-Cax" firstAttribute="top" secondItem="69B-mM-udI" secondAttribute="bottom" id="l7z-Aa-qi6"/>
                             <constraint firstItem="YM7-Of-qaU" firstAttribute="leading" secondItem="PTP-9j-D1X" secondAttribute="leadingMargin" constant="-20" id="oT5-Zn-6E8"/>
-                            <constraint firstItem="69B-mM-udI" firstAttribute="top" secondItem="zYj-gG-3HA" secondAttribute="bottom" id="unU-HN-ku3"/>
+                            <constraint firstItem="69B-mM-udI" firstAttribute="top" secondItem="zYj-gG-3HA" secondAttribute="bottom" constant="-20" id="unU-HN-ku3"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="gzZ-v9-fNB"/>
                                 <exclude reference="YgB-Ql-Lbh"/>
                                 <exclude reference="l7z-Aa-qi6"/>
                             </mask>
@@ -554,19 +624,20 @@ Until early this week, Angela Merkel's re-election campaign had gone entirely to
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="1400"/>
                     <connections>
                         <outlet property="articleBody" destination="Cqa-Re-uvd" id="A5X-gi-39S"/>
                         <outlet property="articleBodyText" destination="FJC-rY-YmJ" id="Sd6-K8-BBd"/>
+                        <outlet property="articleBottom" destination="YM7-Of-qaU" id="zng-Uo-ljJ"/>
                         <outlet property="articleFooter" destination="YGb-mu-WM6" id="VZ1-JU-kgU"/>
                         <outlet property="articleFooterButton" destination="9Ih-Wl-1Pe" id="OAi-O9-8Bx"/>
                         <outlet property="articleHeader" destination="bec-D1-ZJ7" id="nQZ-tD-cbD"/>
-                        <outlet property="articleMeta" destination="U9A-6l-08c" id="Omc-mJ-4x0"/>
+                        <outlet property="articleMeta" destination="U9A-6l-08c" id="5eg-sy-geG"/>
                         <outlet property="articleTitle" destination="ps9-g8-Epa" id="fF3-oh-0oC"/>
                         <outlet property="scrollView" destination="69B-mM-udI" id="35E-dg-5JN"/>
-                        <outlet property="shareButton" destination="vNh-P5-Zyx" id="aFJ-WX-VOn"/>
+                        <outlet property="shareButton" destination="EJ4-KX-H5m" id="D2g-Ue-Vk1"/>
                         <outlet property="stackView" destination="0LP-pU-v6d" id="oFV-za-6jf"/>
                     </connections>
                 </viewController>
@@ -576,9 +647,13 @@ Until early this week, Angela Merkel's re-election campaign had gone entirely to
         </scene>
     </scenes>
     <resources>
-        <image name="close" width="40" height="40"/>
+        <image name="close" width="18" height="18"/>
         <image name="half-tone" width="375" height="240"/>
         <image name="minute" width="103" height="25"/>
+        <image name="next" width="18" height="18"/>
+        <image name="prev" width="18" height="18"/>
+        <image name="sample-article-image" width="560" height="305"/>
+        <image name="share" width="16" height="12"/>
         <image name="welcome 1" width="375" height="280"/>
     </resources>
 </document>
